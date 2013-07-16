@@ -1,0 +1,174 @@
+@import url(http://fonts.googleapis.com/css?family=Cabin:400,700);
+* {
+	padding: 0;
+	margin: 0;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+body {
+	background: url("../image/ui_bg.jpg") center center;
+	font-family: 'Cabin', sans-serif;
+}
+/* VIEW  */
+.viewHolder {
+	width: 1043px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 172px;
+}
+.viewHolder .header {
+	background: #e2eef5; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2UyZWVmNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlMWVkZjQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #e2eef5 0%, #e1edf4 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e2eef5), color-stop(100%,#e1edf4)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #e2eef5 0%,#e1edf4 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #e2eef5 0%,#e1edf4 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #e2eef5 0%,#e1edf4 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #e2eef5 0%,#e1edf4 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2eef5', endColorstr='#e1edf4',GradientType=0 ); /* IE6-8 */
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-bottom: 1px solid #c5c5c5;
+}
+.viewHolder .header p {
+	padding: 11px 9px 11px 9px;
+	font-weight: normal;
+	font-family: Tahoma;
+	font-size: 12px;
+}
+.viewHolder .container {
+	border: 4px solid #f1f9ff;
+	background-color: #fff;
+	-webkit-border-bottom-right-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+.viewHolder .container .inner {
+	border: 1px solid #c5c5c5;
+	background-color: #fff;
+	width: 100%;
+	min-height: 100px;
+	-webkit-border-bottom-right-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+.viewHolder .container .inner h1 {
+	padding: 27px 24px 27px 24px;
+	font-size: 34px;
+	color: #515151;
+	font-weight: normal;
+	display: inline-block;
+}
+.viewHolder .container .inner h1 .secondColour {
+	color: #dd8800;
+}
+.viewHolder .container .inner .searchHolder {
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+	margin-right: 22px;
+}
+.viewHolder .container .inner .searchHolder li {
+	display: inline-block;
+}
+.viewHolder .container .inner .searchHolder .faq p, .viewHolder .container .inner .searchHolder .help p {
+	font-family: Tahoma;
+	font-size: 12px;
+	color: #808080;
+	padding-right: 15px;
+	cursor: pointer;
+}
+.viewHolder .container .inner .searchHolder .faq p {
+	border-right: 1px solid #e4e4e4;
+}
+.viewHolder .container .inner .searchHolder .help p {
+	padding-left: 15px;
+}
+.viewHolder .container .inner .searchHolder input {
+	background: url("../image/input_bg.gif") no-repeat;
+	height: 31px;
+	width: 250px;
+	padding-left: 10px;
+	border: 0;
+}
+.viewHolder .container .inner .searchHolder input:focus {
+	background: url("../image/input_bg_focus.gif") no-repeat;
+}
+/* NAV */
+.viewHolder .container .inner .nav {
+	background: #f5f6f6; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y1ZjZmNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjM3JSIgc3RvcC1jb2xvcj0iI2UzZWFlZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZmYwZjAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #f5f6f6 0%, #e3eaed 37%, #eff0f0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5f6f6), color-stop(37%,#e3eaed), color-stop(100%,#eff0f0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f5f6f6 0%,#e3eaed 37%,#eff0f0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f5f6f6 0%,#e3eaed 37%,#eff0f0 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f5f6f6 0%,#e3eaed 37%,#eff0f0 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f5f6f6 0%,#e3eaed 37%,#eff0f0 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#eff0f0',GradientType=0 ); /* IE6-8 */
+	height: 39px;
+	width: 993px;
+	margin-left: 24px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #c2c4d4;
+	margin-bottom: 20px;
+}
+.viewHolder .container .inner .nav .home {
+	padding: 12px;
+	width: 16px;
+	height: 16px;
+}
+.viewHolder .container .inner .nav div {
+	height:100%;
+	overflow:hidden;
+	border-right: 1px solid #cacad2;
+	cursor: pointer;
+	float:left;
+}
+.viewHolder .container .inner .nav div.right
+{
+	border-right: 0;
+	border-left: 1px solid #cacad2;
+	float:right;
+}
+.viewHolder .container .inner .nav div:hover,.viewHolder .container .inner .nav div.selected {
+	
+	background: #dcdcdc; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RjZGNkYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjM3JSIgc3RvcC1jb2xvcj0iI2U0ZTRlNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlYWVhZWEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #dcdcdc 0%, #e4e4e4 37%, #eaeaea 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dcdcdc), color-stop(37%,#e4e4e4), color-stop(100%,#eaeaea)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #dcdcdc 0%,#e4e4e4 37%,#eaeaea 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #dcdcdc 0%,#e4e4e4 37%,#eaeaea 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #dcdcdc 0%,#e4e4e4 37%,#eaeaea 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #dcdcdc 0%,#e4e4e4 37%,#eaeaea 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dcdcdc', endColorstr='#eaeaea',GradientType=0 ); /* IE6-8 */
+}
+.viewHolder .container .inner .nav div:hover p,.viewHolder .container .inner .nav div.selected p
+{
+	color:#767f85;
+}
+.viewHolder .container .inner .nav div p{
+	padding:13px 12px 13px 12px;
+	color:#DD8800;
+	font-size: 12px;
+	font-weight:bold;
+	font-family: Tahoma;
+}

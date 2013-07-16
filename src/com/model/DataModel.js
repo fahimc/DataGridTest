@@ -1,0 +1,26 @@
+var dataModel = new Model(
+	{
+	 viewHolderCN:"viewHolder",	
+	 viewHeaderCN:"header",	
+	 viewContainerCN:"container",
+	 viewInnerContainerCN:"inner",
+	 searchHolderCN:"searchHolder",
+	 navHolderCN:"nav",
+	 searchFaqCN:"faq",
+	 searchHelpCN:"help",
+	 navRightCN:"right",
+	 navhomeCN:"home",
+	 dataGridHeaderCopy:"DataGrid Control Panel",
+	 dataGridTitleCopy:"DATA<span class='secondColour'>GRID</span>",
+	 faqCopy:"<p>FAQ</p>",
+	 helpCopy:"<p>HELP</p>",
+	 previewCopy:"<p>Preview</p>",
+	 activityCopy:"<p>Activity</p>",
+	 controlCopy:"<p>Control</p>",
+	 issueCopy:"<p>Issue</p>",
+	 overviewCopy:"<p>Overview</p>",
+	 adminCopy:"<p>Admin</p>",
+	 profileCopy:"<p>My Profile</p>",
+	 currentNav:"",
+	}
+);
