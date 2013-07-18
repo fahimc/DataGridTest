@@ -9,6 +9,7 @@ var DataGridView = function(){};
 	_.help=null;
 	_.searchInput=null;
 	_.nav=null;
+	_.table=null;
 	//override the build method
 	_.build=function()
 	{
@@ -48,6 +49,13 @@ var DataGridView = function(){};
 		this.nav = new DataGridNav();
 		this.nav.build();
 		this.innerContainer.appendChild(this.nav.holder);
+		
+		//build table
+		this.table = new DataGridTable();
+		this.table.data = dataModel.get("dataItems");
+		this.table.build();
+		this.innerContainer.appendChild(this.table.holder);
+		
 	}
 	_.updateTitle=function(text)
 	{

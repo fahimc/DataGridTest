@@ -13,7 +13,7 @@ var DataGridParser = function() {
 			item = new DataGridItem();
 			item.ticker = entry.title["$t"];
 			//loop through and add the content
-			item = getData(item,arr);
+			item = getData(item, arr);
 			collection.push(item);
 		}
 
@@ -21,26 +21,42 @@ var DataGridParser = function() {
 	}
 	function getData(item, arr) {
 		for (var b = 0; b < arr.length; b++) {
+			console.log(arr[b]);
 			var keyval = arr[b].split(":");
+			var value =keyval[1];
+			var isNum = isNumber(value);
+			
+			if(b>0 && isNum.numeric)value = isNum.val;
 			switch(b) {
 				case 0:
-					item.industry = keyval[1];
+					item.industry = value;
 					break;
 				case 1:
-					item.marketCap = keyval[1];
+					item.marketCap = value;
+					item.marketCapFormat = "number";
 					break;
 				case 2:
-					item.price = keyval[1];
+					item.price = value;
+					item.priceFormat = "price";
 					break;
 				case 3:
-					item.change = keyval[1];
+					item.change = value;
+					item.changeFormat = "percent";
 					break;
 				case 4:
-					item.volume = keyval[1];
+					item.volume = value;
+					item.volumeFormat = "number";
 					break;
 			}
 		}
 		return item;
+	}
+
+	function isNumber(val) {
+		val = val.replace(/\s+/g, ' ');
+		var num =Number(val.replace(/[A-Za-z$%£]/g, ""));
+		var is =(typeof num === 'number' && isFinite(num));
+		return {numeric:is,val:num};
 	}
 
 }

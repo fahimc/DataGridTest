@@ -2,9 +2,18 @@ var dataModel = new Model({
 	SPREADSHEET_URL : "https://spreadsheets.google.com/feeds/list/0ArMvT6nVqkMPdFhEdkVlNTlvanVNMWZYNDA4M19UN1E/od6/public/basic?alt=json-in-script&callback=[c]",
 	worksheet:null,
 	dataItems:null,
+	headings:{
+		ticker:"Ticker",
+		industry:"Industry",
+		market:"Market Cap",
+		price:"Price",
+		change:"Change",
+		volume:"Volume"
+	},
 	viewHolderCN : "viewHolder",
 	viewHeaderCN : "header",
 	viewContainerCN : "container",
+	dataTableCN : "datatable",
 	viewInnerContainerCN : "inner",
 	searchHolderCN : "searchHolder",
 	navHolderCN : "nav",

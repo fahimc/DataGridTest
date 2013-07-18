@@ -9,7 +9,7 @@ html, body {
 	overflow: auto;
 }
 body {
-	background: url("../image/ui_bg.jpg") center center;
+	background: url("../image/ui_bg.jpg") 0 0;
 	font-family: 'Cabin', sans-serif;
 }
 /* VIEW  */
@@ -19,6 +19,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 172px;
+	margin-bottom: 172px;
 }
 .viewHolder .header {
 	background: #e2eef5; /* Old browsers */
@@ -54,6 +55,7 @@ body {
 	-moz-border-radius-bottomleft: 3px;
 	border-bottom-right-radius: 3px;
 	border-bottom-left-radius: 3px;
+	
 }
 .viewHolder .container .inner {
 	border: 1px solid #c5c5c5;
@@ -66,6 +68,7 @@ body {
 	-moz-border-radius-bottomleft: 3px;
 	border-bottom-right-radius: 3px;
 	border-bottom-left-radius: 3px;
+	
 }
 .viewHolder .container .inner h1 {
 	padding: 27px 24px 27px 24px;
@@ -136,20 +139,19 @@ body {
 	height: 16px;
 }
 .viewHolder .container .inner .nav div {
-	height:100%;
-	overflow:hidden;
+	height: 100%;
+	overflow: hidden;
 	border-right: 1px solid #cacad2;
 	cursor: pointer;
-	float:left;
+	float: left;
 }
-.viewHolder .container .inner .nav div.right
-{
+.viewHolder .container .inner .nav div.right {
 	border-right: 0;
 	border-left: 1px solid #cacad2;
-	float:right;
+	float: right;
 }
-.viewHolder .container .inner .nav div:hover,.viewHolder .container .inner .nav div.selected {
-	
+.viewHolder .container .inner .nav div:hover, .viewHolder .container .inner .nav div.selected {
+
 	background: #dcdcdc; /* Old browsers */
 	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RjZGNkYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjM3JSIgc3RvcC1jb2xvcj0iI2U0ZTRlNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlYWVhZWEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -161,14 +163,200 @@ body {
 	background: linear-gradient(to bottom,  #dcdcdc 0%,#e4e4e4 37%,#eaeaea 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dcdcdc', endColorstr='#eaeaea',GradientType=0 ); /* IE6-8 */
 }
-.viewHolder .container .inner .nav div:hover p,.viewHolder .container .inner .nav div.selected p
-{
-	color:#767f85;
+.viewHolder .container .inner .nav div:hover p, .viewHolder .container .inner .nav div.selected p {
+	color: #767f85;
 }
-.viewHolder .container .inner .nav div p{
-	padding:13px 12px 13px 12px;
-	color:#DD8800;
+.viewHolder .container .inner .nav div p {
+	padding: 13px 12px 13px 12px;
+	color: #DD8800;
 	font-size: 12px;
-	font-weight:bold;
+	font-weight: bold;
 	font-family: Tahoma;
+}
+/* TABLE COMPONENT */
+.viewHolder .container .inner .datatable {
+width: 993px;
+margin-left: 24px;
+}
+.viewHolder .container .inner .datatable .labels {
+	background: #e9f1f7; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIyJSIgc3RvcC1jb2xvcj0iI2U5ZjFmNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjM3JSIgc3RvcC1jb2xvcj0iI2UxZWNmNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkOWU3ZjEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #e9f1f7 2%, #e1ecf4 37%, #d9e7f1 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,#e9f1f7), color-stop(37%,#e1ecf4), color-stop(100%,#d9e7f1)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e9f1f7 2%,#e1ecf4 37%,#d9e7f1 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e9f1f7 2%,#e1ecf4 37%,#d9e7f1 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e9f1f7 2%,#e1ecf4 37%,#d9e7f1 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #e9f1f7 2%,#e1ecf4 37%,#d9e7f1 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9f1f7', endColorstr='#d9e7f1',GradientType=0 ); /* IE6-8 */
+	width: 972px;
+	-webkit-border-top-left-radius: 3px;
+-webkit-border-top-right-radius: 3px;
+-moz-border-radius-topleft: 3px;
+-moz-border-radius-topright: 3px;
+border-top-left-radius: 3px;
+border-top-right-radius: 3px;
+	border: 1px solid #c2c4d4;
+	
+	padding: 11px;
+}
+/* Table headings */
+.viewHolder .container .inner .datatable .labels p
+{
+	background:url("../image/arrow.png") no-repeat;
+
+	background-position: 40px 36px; 
+}
+.viewHolder .container .inner .datatable .labels p.ticker.down
+{
+	background-position: 40px -6px; 
+}
+.viewHolder .container .inner .datatable .labels p.ticker.up
+{
+	background-position: 40px -36px;
+}
+.viewHolder .container .inner .datatable .labels p.industry
+{
+	background-position: 57px 36px; 
+}
+.viewHolder .container .inner .datatable .labels p.industry.down
+{
+	background-position: 57px -6px; 
+}
+.viewHolder .container .inner .datatable .labels p.industry.up
+{
+	background-position: 57px -36px;
+}
+.viewHolder .container .inner .datatable .labels p.market
+{
+	background-position: 57px 36px; 
+}
+.viewHolder .container .inner .datatable .labels p.market.down
+{
+	background-position: 57px -6px; 
+}
+.viewHolder .container .inner .datatable .labels p.market.up
+{
+	background-position: 57px -36px;
+}
+.viewHolder .container .inner .datatable .labels p.price
+{
+	background-position: 110px 36px; 
+}
+.viewHolder .container .inner .datatable .labels p.price.down
+{
+	background-position: 110px -6px; 
+}
+.viewHolder .container .inner .datatable .labels p.price.up
+{
+	background-position: 110px -36px;
+}
+.viewHolder .container .inner .datatable .labels p.change
+{
+	background-position: 70px 36px; 
+}
+.viewHolder .container .inner .datatable .labels p.change.down
+{
+	background-position: 70px -6px; 
+}
+.viewHolder .container .inner .datatable .labels p.change.up
+{
+	background-position: 70px -36px;
+}
+.viewHolder .container .inner .datatable .labels p.volume
+{
+	background-position: 85px 36px; 
+}
+.viewHolder .container .inner .datatable .labels p.volume.down
+{
+	background-position: 85px -6px; 
+}
+.viewHolder .container .inner .datatable .labels p.volume.up
+{
+	background-position: 85px -36px;
+}
+.viewHolder .container .inner .datatable .rowHolder
+{
+-webkit-border-bottom-right-radius: 3px;
+-webkit-border-bottom-left-radius: 3px;
+-moz-border-radius-bottomright: 3px;
+-moz-border-radius-bottomleft: 3px;
+border-bottom-right-radius: 3px;
+border-bottom-left-radius: 3px;
+	border: 1px solid #c2c4d4;
+	border-top:0px;
+	width: 993px;
+	margin-bottom: 20px;
+}
+.viewHolder .container .inner .datatable .row
+{
+	
+	padding: 10px 10px 10px 10px;
+	
+}
+.viewHolder .container .inner .datatable .row:hover,.viewHolder .container .inner .datatable .row.second:hover
+{
+	background-color: #515151;
+}
+.viewHolder .container .inner .datatable .row.second
+{
+	background-color: #f8f8f8;
+}
+.viewHolder .container .inner .datatable .labels p{
+	font-family: Tahoma;
+	font-size:12px;
+	font-weight: bold;
+	color:#8e989f;
+	display: inline-block;
+	cursor: pointer;
+}
+.viewHolder .container .inner .datatable .labels p:hover
+{
+	color:#DD8800;
+}
+.viewHolder .container .inner .datatable p{
+	font-family: Tahoma;
+	font-size:12px;
+	font-weight: normal;
+	color:#8e989f;
+	display: inline-block;
+}
+
+.viewHolder .container .inner .datatable .ticker
+{
+	width:147px;
+}
+.viewHolder .container .inner .datatable .industry
+{
+	width:240px;
+	
+}
+.viewHolder .container .inner .datatable .market
+{
+	width:143px;
+	text-align: right;
+}
+.viewHolder .container .inner .datatable .price
+{
+	width:155px;
+	text-align: right;
+}
+
+.viewHolder .container .inner .datatable .change
+{
+	width:130px;
+	text-align: right;
+}
+.viewHolder .container .inner .datatable  .volume
+{
+	width:145px;
+	text-align: right;
+}
+.viewHolder .container .inner .datatable p.positive
+{
+	color:#0aa000;
+}
+.viewHolder .container .inner .datatable p.negative
+{
+	color:#aa0000;
 }
