@@ -57,6 +57,12 @@ var DataGridNav = function() {
 		this.holder.appendChild(profile);
 		
 		var root = this;
+		
+		/*TODO
+		 * This can be writen better to be able to remove the handlers too but currently this method 
+		 * will not work to remove as I have not stored the function that I have created.
+		 */
+		
 		Utensil.addListener(home,"click",function(){root.onClick(home)});
 		Utensil.addListener(preview,"click",function(){root.onClick(preview)});
 		Utensil.addListener(activity,"click",function(){root.onClick(activity)});
