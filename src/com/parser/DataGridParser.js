@@ -1,6 +1,6 @@
 var DataGridParser = function() {
 	this.parse = function(json) {
-		console.log(json);
+		
 		var collection = new Array();
 		var item;
 		var entry;
@@ -21,7 +21,7 @@ var DataGridParser = function() {
 	}
 	function getData(item, arr) {
 		for (var b = 0; b < arr.length; b++) {
-			console.log(arr[b]);
+			
 			var keyval = arr[b].split(":");
 			var value =keyval[1];
 			var isNum = isNumber(value);
