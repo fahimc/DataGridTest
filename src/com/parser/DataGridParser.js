@@ -10,7 +10,7 @@ var DataGridParser = function() {
 			var entry = json.feed.entry[a];
 			//get the content and split it by commas and then collons
 			var arr = entry.content["$t"].split(",");
-			console.log(arr);
+		
 			item = new DataGridItem();
 			item.ticker = entry.title["$t"];
 			//loop through and add the content
