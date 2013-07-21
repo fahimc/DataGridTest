@@ -54,7 +54,7 @@ var DataGridView = function(){};
 		this.table = new DataGridTable();
 		this.table.data = dataModel.get("dataItems");
 		this.table.build();
-		this.innerContainer.appendChild(this.table.holder);
+		if(this.table.holder)this.innerContainer.appendChild(this.table.holder);
 		
 	}
 	_.updateTitle=function(text)

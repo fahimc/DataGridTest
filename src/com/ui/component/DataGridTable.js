@@ -9,7 +9,7 @@ var DataGridTable = function() {
 	_.data = null;
 	_.rowHolder = null;
 	_.handlers=[];
-	_.currentSortId;"";
+	_.currentSortId="";
 	_.build = function() {
 		if (!this.data)
 			return;
@@ -61,7 +61,7 @@ var DataGridTable = function() {
 
 			var t = document.createElement("P");
 			t.className = "ticker";
-			t.innerHTML = this.data[a].ticker;
+			t.innerHTML = this.data[a].ticker!=null?this.data[a].ticker:"";
 			row.appendChild(t);
 
 			var ind = document.createElement("P");
@@ -76,7 +76,7 @@ var DataGridTable = function() {
 			
 			var pr = document.createElement("P");
 			pr.className = "price";
-			pr.innerHTML = "£"+this.numberWithCommas(this.data[a].price);
+			pr.innerHTML = (this.data[a].price!=null?"£":"")+this.numberWithCommas(this.data[a].price);
 			row.appendChild(pr);
 			
 			var ch = document.createElement("P");
@@ -87,7 +87,7 @@ var DataGridTable = function() {
 			}else{
 				ch.className+=" positive";
 			}
-			ch.innerHTML = this.numberWithCommas(this.data[a].change)+"%";
+			ch.innerHTML = this.numberWithCommas(this.data[a].change)+(this.data[a].change!=null?"%":"");
 			row.appendChild(ch);
 			
 			
@@ -122,6 +122,7 @@ var DataGridTable = function() {
 		return num % 2;
 	}
 	_.numberWithCommas = function(x) {
+		if(x==undefined||x==null)x="";
 		return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 	}
 	_.onHeadingClick=function(event)

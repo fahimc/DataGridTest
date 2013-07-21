@@ -196,6 +196,12 @@ body {
 	border-top-right-radius: 3px;
 	border: 1px solid #c2c4d4;
 	padding: 11px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: moz-none;
+	-ms-user-select: none;
+	user-select: none;
 }
 /* Table headings */
 .viewHolder .container .inner .datatable .labels p {

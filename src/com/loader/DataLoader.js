@@ -13,7 +13,11 @@ var DataLoader = function(callback) {
 		this.script = document.createElement("SCRIPT");
 		this.script.type = "text/javascript";
 		this.script.id = this.scriptID;
-		this.script.src = url;
+		
+		//get latest version
+		var ran =Math.floor((Math.random()*10000)+1);
+		
+		this.script.src = url+"&uni_ran="+ran;
 		document.getElementsByTagName("head")[0].appendChild(this.script);
 	};
 	this.onComplete=function(json)

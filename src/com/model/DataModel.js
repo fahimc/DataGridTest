@@ -1,5 +1,5 @@
 var dataModel = new Model({
-	SPREADSHEET_URL : "https://spreadsheets.google.com/feeds/list/0ArMvT6nVqkMPdFhEdkVlNTlvanVNMWZYNDA4M19UN1E/od6/public/basic?alt=json-in-script&callback=[c]",
+	SPREADSHEET_URL : "https://spreadsheets.google.com/feeds/list/0ArMvT6nVqkMPdHBkazE2ZGZvVXQyYzFmQ2dSckRiWVE/od6/public/basic?alt=json-in-script&callback=[c]",
 	worksheet:null,
 	dataItems:null,
 	headings:{

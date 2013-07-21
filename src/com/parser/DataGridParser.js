@@ -5,11 +5,12 @@ var DataGridParser = function() {
 		var item;
 		var entry;
 		// create objects for each row
+		if(!json.feed.entry)return;
 		for (var a = 0; a < json.feed.entry.length; a++) {
 			var entry = json.feed.entry[a];
 			//get the content and split it by commas and then collons
 			var arr = entry.content["$t"].split(",");
-
+			console.log(arr);
 			item = new DataGridItem();
 			item.ticker = entry.title["$t"];
 			//loop through and add the content
@@ -23,7 +24,7 @@ var DataGridParser = function() {
 		for (var b = 0; b < arr.length; b++) {
 			
 			var keyval = arr[b].split(":");
-			var value =keyval[1];
+			var value =keyval[1]!=undefined?keyval[1]:"";
 			var isNum = isNumber(value);
 			
 			if(b>0 && isNum.numeric)value = isNum.val;
